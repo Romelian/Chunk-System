@@ -66,7 +66,7 @@ public class ChunkLoader : MonoBehaviour
                     else if (visibleCheck(coord))
                     {
                         Chunk chunk;
-                        if (chunkObject = null)
+                        if (chunkObject == null)
                             chunk = Chunk.Create(parent, coord, chunkSettings.size);
                         else
                             chunk = Chunk.CreateWrapInstantiate(chunkObject, parent, coord, chunkSettings.size);
